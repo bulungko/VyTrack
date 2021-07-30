@@ -19,7 +19,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
         String actualTitle = driver.getTitle();
         String expectedTitle = "Dashboard";
 
@@ -34,7 +34,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
         String actualTitle = driver.getTitle();
         String expectedTitle = "Dashboard";
 
@@ -49,7 +49,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
         String actualTitle = driver.getTitle();
         String expectedTitle = "Dashboard";
 
@@ -62,7 +62,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
 
         String actualText = driver.findElement(By.xpath(" //div[.='Invalid user name or password.']")).getText();
         String expectedText = "Invalid user name or password.";
@@ -76,7 +76,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(usernameT1);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
 
         String actualText = driver.findElement(By.xpath(" //div[.='Invalid user name or password.']")).getText();
         String expectedText = "Invalid user name or password.";
@@ -89,7 +89,7 @@ public class VytrackUtils {
 
        driver.findElement(By.xpath("//button[.='Log in']")).click();
 
-        BrowserUtil.sleep(3);
+
 
         String actualText = driver.findElement(By.xpath(" //div[.='Invalid user name or password.']")).getText();
         String expectedText = "Invalid user name or password.";
@@ -104,7 +104,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
         String actualTitle = driver.getTitle();
         String expectedTitle = "Dashboard";
 
@@ -119,7 +119,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
         String actualTitle = driver.getTitle();
         String expectedTitle = "Dashboard";
 
@@ -134,7 +134,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
         String actualTitle = driver.getTitle();
         String expectedTitle = "Dashboard";
 
@@ -148,7 +148,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
         String actualTitle = driver.getTitle();
         String expectedTitle = "Dashboard";
 
@@ -163,7 +163,7 @@ public class VytrackUtils {
         driver.findElement(By.xpath("//input[@id='prependedInput']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='prependedInput2']")).sendKeys(password + Keys.ENTER);
 
-        BrowserUtil.sleep(3);
+
         String actualTitle = driver.getTitle();
         String expectedTitle = "Dashboard";
 
