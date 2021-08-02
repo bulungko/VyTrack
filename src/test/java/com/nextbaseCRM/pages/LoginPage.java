@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
     public LoginPage() {
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//span[@id='user-name']")
@@ -25,8 +25,14 @@ public class LoginPage {
     @FindBy(xpath = "//span[.='Log out']")
     public WebElement logoutButton;
 
+    @FindBy(xpath = "//div[.='Incorrect login or password']")
+    public WebElement incorrectLoginMessage;
 
+    @FindBy(id = "USER_REMEMBER")
+    public WebElement userRememberButton;
 
+    @FindBy(xpath = "//a[.='Forgot your password?']")
+    public WebElement forgotPasswordLink;
 
 
 

@@ -12,11 +12,11 @@ import org.junit.runner.RunWith;
                 "rerun:target.rerun.txt"
         },
         features = "src/test/resources/features",
-        glue = "com/nextbasecrm/stepDefinitions",
+        glue = "com/nextbaseCRM/stepDefinition",
         dryRun = false,
-        tags = "@wip"
+        tags ="@wip"
+
 
 )
-
-public class CukesRunner {
+class CukesRunner {
 }
