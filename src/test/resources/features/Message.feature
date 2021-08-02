@@ -7,13 +7,13 @@ Feature: 2. As a user, I should be able to send message
     When user write the message and clicking tab
     Then user can see message is displayed as expected
 
-  @wip
+
   Scenario: Verify users can cancel message.
     When user click message tab
     Then user can cancel message
 
 
-
+  @wip
   Scenario: Verify users can attach link by clicking on the link icon."
     When user click message tab
     When user click attach link icon and attach link
