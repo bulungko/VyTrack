@@ -2,7 +2,7 @@ package B22Group21.vytrack.tests;
 
 import B22Group21.vytrack.utils.ConfigurationReader;
 import B22Group21.vytrack.utils.VytrackUtils;
-import B22Group21.vytrack.utils.WebDriverFactory;
+//import B22Group21.vytrack.utils.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,7 +16,7 @@ public class VytrackTests {
     @BeforeMethod
     public void setUp() {
         String browser = ConfigurationReader.getProperties("browser");
-        driver = WebDriverFactory.getDriver(browser);
+        //driver = WebDriverFactory.getDriver(browser);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }

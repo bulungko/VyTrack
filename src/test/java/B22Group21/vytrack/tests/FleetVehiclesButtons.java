@@ -1,6 +1,6 @@
 package B22Group21.vytrack.tests;
 
-import B22Group21.vytrack.utils.BrowserUtil;
+
 import B22Group21.vytrack.utils.ConfigurationReader;
 import B22Group21.vytrack.utils.Driver;
 import B22Group21.vytrack.utils.VytrackUtils;
@@ -43,25 +43,25 @@ public class FleetVehiclesButtons {
         fleet.click();
         WebElement vehicles = Driver.getDriver().findElement(By.xpath("//span[.='Vehicles']"));
         vehicles.click();
-        BrowserUtil.sleep(2);
+
         WebElement gridSetting = Driver.getDriver().findElement(By.xpath("//a[@title='Grid Settings']"));
-        BrowserUtil.sleep(2);
+
         gridSetting.click();
         //verify the web page width
         //if getX from Grid setting button is larger than half of webpage width,
         //Grid setting button is right side of page.
         int pageWidth = Driver.getDriver().manage().window().getSize().getWidth();
 
-        BrowserUtil.sleep(2);
+
         Point pointOfGrid = gridSetting.getLocation();
 
-        BrowserUtil.sleep(2);
+
         int  getX = pointOfGrid.getX();
 
-        BrowserUtil.sleep(2);
+
         int gridWidth = gridSetting.getSize().getWidth();
 
-        BrowserUtil.sleep(2);
+
         Assert.assertTrue((getX+gridWidth) > pageWidth/2 );
     }
 }
